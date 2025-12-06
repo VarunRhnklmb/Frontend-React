@@ -1,0 +1,134 @@
+/* Full-page layout for AboutUs like Veg/Nonveg pages */
+.about-page {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO SECTION */
+.about-hero {
+  width: 100%;
+  height: 80vh; /* Increased height for a bigger hero */
+  background-image: url('https://portalxaa.com/wp-content/uploads/2022/11/70b67e3f-a1c4-4d4b-a01e-784c2cae5618.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 3px 3px 12px black; /* stronger text shadow */
+ 
+}
+
+.about-hero-title {
+  font-size: 4rem; /* bigger title */
+  margin: 0;
+}
+
+.about-hero-subtitle {
+  font-size: 1.8rem; /* bigger subtitle */
+  margin-top: 15px;
+}
+
+/* MAIN CONTENT */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 20px; /* more vertical padding */
+  background-color: #f8f8f8;
+  gap: 50px; /* more spacing between text and image */
+}
+
+.about-text-box {
+  flex: 1 1 500px; /* bigger text box */
+  margin: 10px;
+  padding: 40px; /* more padding */
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  border: 2px solid #d1f786;
+}
+
+.about-text-box h2 {
+  color: #2e7d32;
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.about-text-box p {
+  line-height: 1.8;
+  font-size: 1.1rem; /* slightly bigger text */
+}
+
+.about-main-img {
+  flex: 1 1 500px; /* bigger image */
+  max-width: 500px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+/* FEATURES */
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* more spacing between cards */
+  padding: 80px 20px; /* bigger vertical padding */
+  background-color: #e6ffe6;
+}
+
+.feature-card {
+  flex: 1 1 300px; /* bigger cards */
+  padding: 30px; /* more padding */
+  background: #ffffff;
+  border: 2px solid #b8e399;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-7px);
+  background-color: #f0fff0;
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem; /* bigger heading */
+  color: #2c4a31;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* FOOTER */
+.about-footer {
+  width: 100%;
+  padding: 50px 20px; /* bigger footer */
+  background-color: #d8f8d0;
+  text-align: center;
+  border-top: 2px solid #b2e6a8;
+  color: #2c4a31;
+}
+
+.about-footer h3 {
+  margin: 0 0 15px;
+  font-size: 1.8rem; /* bigger footer heading */
+  font-weight: bold;
+}
+
+.copy {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #3f5e48;
+}

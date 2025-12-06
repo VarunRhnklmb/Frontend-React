@@ -1,0 +1,61 @@
+/* Center whole email section */
+.email-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10px;     /* reduced more */
+  gap: 5px;             /* reduced more */
+}
+
+/* Label / heading */
+.email-section label,
+.email-section h4 {
+  font-size: 13px;      /* reduced */
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Input box */
+.email-section input {
+  width: 200px;          /* reduced */
+  padding: 6px 8px;      /* reduced */
+  font-size: 13px;       /* reduced */
+  border: 1.5px solid #0072ff;  /* slightly thinner */
+  border-radius: 6px;    /* smaller */
+  outline: none;
+  text-align: center;
+}
+
+.email-section input:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 4px rgba(0, 114, 255, 0.3); /* smaller glow */
+}
+
+/* Button */
+.email-section button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+
+  padding: 8px 16px;     /* reduced */
+  font-size: 13px;       /* reduced */
+  font-weight: 600;
+
+  border: none;
+  border-radius: 8px;    /* smaller */
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* reduced shadow */
+}
+
+.email-section button:hover {
+  transform: translateY(-1px) scale(1.01); /* very small effect */
+  box-shadow: 0 6px 14px rgba(0, 114, 255, 0.25);
+}
+
+.email-section button:active {
+  transform: scale(0.97);
+}

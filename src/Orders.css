@@ -1,0 +1,105 @@
+/* ============================= */
+/*       ORDERS PAGE LAYOUT      */
+/* ============================= */
+
+.orders-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f0f4f8;
+  padding-top: 20px;
+  width: 100vw;      /* full viewport width */
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Orders Container - FULL WIDTH */
+.orders-container {
+  width: 100vw;      /* full viewport width */
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Orders Heading */
+.orders-page h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+/* Order Box Header */
+.orders-container h3 {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  cursor: pointer;
+  border: 2px solid #e0e0e0;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.orders-container h3:hover {
+  background: #e9f7ef;
+  border-color: #2e7d32;
+}
+
+/* Order Details Box */
+.order-details {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; /* center cards in full width */
+}
+
+/* Individual Item Card */
+.order-details > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  flex: 1 1 200px;      /* flexible width, min 200px */
+  max-width: 250px;     /* max card width */
+  box-sizing: border-box;
+  background: #f9fff7;  /* premium light background */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-details > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Item Image */
+.order-details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Highlight Item Name */
+.order-details p:first-child {
+  font-weight: 600;
+  color: #1b5e20;   /* premium green */
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Price & Qty Centered */
+.order-details p {
+  margin: 2px 0;
+  text-align: center;
+}

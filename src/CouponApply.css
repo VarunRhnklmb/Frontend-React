@@ -1,0 +1,72 @@
+/* ===================================
+      PREMIUM COUPON INPUT
+=================================== */
+
+.coupon-input {
+  width: 120px;      /* reduced from 360px */
+  padding: 12px 14px;
+  font-size: 16px;
+  font-weight: 600;
+
+  border-radius: 10px;
+  border: 2px solid #dcdcdc;
+  outline: none;
+  background: #ffffff;
+  transition: 0.3s ease;
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+.coupon-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.coupon-input {
+  width: 120px;
+}
+.coupon-input:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 12px rgba(0, 122, 255, 0.4);
+}
+
+.coupon-input::placeholder {
+  font-weight: 500;
+  color: #9a9a9a;
+}
+
+
+/* ===================================
+      PREMIUM APPLY COUPON BUTTON
+=================================== */
+
+.apply-btn {
+  margin-left: 1px;
+  padding: 14px 22px;
+
+  background: linear-gradient(135deg, #008cff, #004bff);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 110, 255, 0.35);
+}
+
+.apply-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 110, 255, 0.45);
+}
+
+.apply-btn:active {
+  transform: scale(0.96);
+}
+
+.apply-btn:disabled {
+  background: #b5b5b5;
+  box-shadow: none;
+  cursor: not-allowed;
+}
