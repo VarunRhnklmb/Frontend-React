@@ -159,7 +159,7 @@ export const fetchNonVegProducts = createAsyncThunk(
   "nonveg/fetchNonVegProducts",
   async () => {
     const response = await api.get(
-      "/nonveg/getAll"
+      "/api/v1/products/nonveg/getAll"
     );
     return response.data;
   }
@@ -198,7 +198,7 @@ export const fetchMilkBreadProducts = createAsyncThunk(
   "milkBread/fetchMilkBreadProducts",
   async () => {
     const response = await api.get(
-      "/milkbread/getAll"
+      "/api/v1/products/milkbread/getAll"
     );
     return response.data;
   }
@@ -283,7 +283,7 @@ export const placeOrder = createAsyncThunk(
   "orders/placeOrder",
   async (orderData, { rejectWithValue }) => {
     try {
-      const res = await api.post("/orders", orderData);
+      const res = await api.post("/api/v1/products/orders", orderData);
       return res.data;
     } catch (err) {
       return rejectWithValue(err.response?.data || "Server Error");
@@ -374,7 +374,7 @@ export const ordersSlice1 = createSlice({
 export const registerUser = createAsyncThunk(
   "registration/registerUser",
   async (formData) => {
-    const response = await api.post("/register",formData);
+    const response = await api.post("/api/v1/products/register",formData);
     return response.data;
   }
 );
