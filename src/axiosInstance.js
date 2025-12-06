@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:7000/api/v1/products",
+  baseURL: "backend-express-blush.vercel.app",
 });
 
 // Add token to every request
