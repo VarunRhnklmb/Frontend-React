@@ -67,6 +67,8 @@ function Registration() {
   return (
     <div className="reg-container">
       <div className="reg-card">
+        <p className="reg-subtext">
+        Sign up and log in to see all products.</p>
         <h2 className="reg-title">Create Your Account 🎉</h2>
 
         <form onSubmit={handleSubmit} className="reg-form">
@@ -111,7 +113,7 @@ function Registration() {
           {errors.phone && <p className="error-msg">{errors.phone}</p>}
 
           <button className="reg-btn" type="submit" disabled={loading}>
-            {loading ? "Registering..." : "Register"}
+            {loading ? "Signing up..." : "Sign Up"}
           </button>
         </form>
         

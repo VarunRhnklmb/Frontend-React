@@ -138,3 +138,15 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+.reg-subtext {
+  background: #e8f5e9;           /* light green highlight */
+  color: #1b5e20;                /* dark green text */
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 18px;
+  font-weight: 500;
+  border-left: 4px solid #1b5e20; /* highlight bar */
+}
