@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://backend-express-blush.vercel.app",
+  baseURL: "https://backend-express-smoky.vercel.app",
 });
 
 // Add token to every request

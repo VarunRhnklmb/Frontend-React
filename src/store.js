@@ -79,7 +79,7 @@ export const { addToCart, removeFromCart, incrementItem, decrementItem, clearCar
 export const fetchHomeProducts = createAsyncThunk(
   "home/fetchHomeProducts",
   async () => {
-    const response = await api.get("/homeProducts/getAll");
+    const response = await api.get("/api/v1/products/homeProducts/getAll");
     return response.data;
   }
 );
@@ -119,7 +119,7 @@ const homeSlice = createSlice({
 export const fetchVegProducts = createAsyncThunk(
   "veg/fetchVegProducts",
   async () => {
-    const response = await api.get("/vegproducts/getAll");
+    const response = await api.get("/api/v1/products/vegproducts/getAll");
     return response.data;
   }
 );
@@ -239,7 +239,7 @@ let milkBreadSlice = createSlice({
 export const fetchFruitsVegProducts = createAsyncThunk(
   "fruitsVeg/fetchFruitsVegProducts",
   async () => {
-    const response = await api.get("/fruitsveg/getAll");
+    const response = await api.get("/api/v1/products/fruitsveg/getAll");
     return response.data; // Assuming your backend sends { data: [...] }
   }
 );
@@ -327,7 +327,7 @@ export const getAllOrders1 = createAsyncThunk(
   "orders1/fetchOrders",
   async (_, { rejectWithValue }) => {
     try {
-      const res = await api.get("/orders/getAll");
+      const res = await api.get("/api/v1/products/orders/getAll");
       const data = res.data?.data; // backend ---> { message, data: [] }
       return data;
     } catch (err) {
@@ -415,7 +415,7 @@ export const LoginUser = createAsyncThunk(
   "Login/loginUser",
   async (formData, { rejectWithValue }) => {
     try {
-      const res = await api.post("/login", formData);
+      const res = await api.post("/api/v1/products/login", formData);
       return res.data; // must return user data
     } catch (error) {
       return rejectWithValue(
